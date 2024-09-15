@@ -91,7 +91,44 @@
         }
     </style>
 </head>
+
 <body>
+
+
+    <main> 
+
+        <form action="submit.php" method = "post" > 
+        <input type="text" name="first_name" placeholder="First Name" id="" class="grid-input" required>
+        <input type="text" name="last_name" placeholder="Last Name" id="" class="grid-input" required>
+        <input type="email" name="user_email" placeholder="Email" id="" class="grid-input" required>
+        <input type="password" name="user_password" placeholder="Password" id="" class="grid-input" required>
+
+        <?php
+
+         $currentDate = date('Y-m-d');
+        ?>
+
+        <input type="date" name="date" required min="<?php echo $currentDate; ?>">
+
+        <input type="reset" value = "Reset Button">
+
+        <input type="checkbox" name="checkbox" id="" value=""><label for="checkbox"> Java </label>
+        <input type="checkbox" name="checkbox" id="" value=""><label for="checkbox"> Phyton </label>
+        <input type="checkbox" name="checkbox" id="" value=""><label for="checkbox"> .NET </label>
+
+        <input type="radio" name="year-level" id="" value="1" required><label for="year-level"> 1 </label>
+        <input type="radio" name="year-level" id="" value="2" required><label for="year-level"> 2 </label>
+        <input type="radio" name="year-level" id="" value="3" required><label for="year-level"> 3 </label>
+       
+
+
+
+
+        <input type="submit" value="Click Me"> 
+
+        </form>
+    </main>
     
 </body>
+
 </html> 
